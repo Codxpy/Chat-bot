@@ -1,0 +1,46 @@
+import time
+import random
+
+
+while True:
+    print('Hi user can i know your name please')
+    a = input()
+    print('typing...')
+    ran = ['Just Bored at home man You?','Listening Songs '+a+' You?','I was playing You?','Ntg you?']
+    time.sleep(1)
+    print('Hi '+ a +' Myself Robert You can call me rob')
+    while True:
+        aa = input()
+        if 'hi' in aa or 'Hi' in aa:
+            print('typing...')
+            time.sleep(1)
+            print('Hello '+a)
+        elif 'wt r u doing' in aa or 'what are you doing' in aa or 'what r u doing' in aa:
+            print('typing...')
+            time.sleep(1)
+            af =random.choice(ran)
+            print(af)
+            g = input()
+            print('typing...')
+            time.sleep(1)
+            print('Hmm cool')
+        elif aa=='rob':
+            print('Yes tell me')
+        elif 'then' in aa:
+            print('typing...')
+            time.sleep(1)
+            print('you tell me man')
+        elif 'tell me somthing to do now' in aa or 'tell me smtg' in aa:
+            r = ['Go learn HTML basic it will help you','Clean your room its soo dirty','Do any Python program','Make a yutube video','Scrool Instagram']
+            print('typing...')
+            time.sleep(1)
+            l = random.choice(r)
+            print(l)
+            hh = input()
+            if 'abt' in hh:
+                print('How do i know you are a programer You should be knowing')
+            else:
+                pass
+
+        else:
+            print('Sorry ' +a+ 'I did not Understand')
